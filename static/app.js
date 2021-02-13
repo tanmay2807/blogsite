@@ -30,9 +30,11 @@ document.getElementsByTagName("body")[0].addEventListener("click",(e)=>{
         document.getElementsByClassName("results")[0].style.display = "none";
         document.getElementsByClassName("result-search")[0].innerHTML = '<i class="fa fa-search" style="font-size:2.8rem;transform: translateY(-0.1rem);color:#0a2438;"></i>' + " " + "Search ...";
         document.getElementsByClassName("result-search")[0].style.display="block";
+        document.getElementsByClassName("input")[0].placeholder = "  Search"
     } else {
         document.getElementsByClassName("fa-search")[0].style.visibility = "hidden";
         document.getElementsByClassName("results")[0].style.display = "flex";
+        document.getElementsByClassName("input")[0].placeholder = " ";
 
         for(var i=0;i<25;i++){
             document.getElementsByTagName("a")[i].style.display= "none";

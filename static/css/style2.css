@@ -276,18 +276,24 @@ html {
 
 .heading .logo .searchbar .search input::-webkit-input-placeholder {
   font-size: 1.5rem;
+  -webkit-transform: translateX(2rem);
+          transform: translateX(2rem);
 }
 
 .heading .logo .searchbar .search input:-ms-input-placeholder {
   font-size: 1.5rem;
+  transform: translateX(2rem);
 }
 
 .heading .logo .searchbar .search input::-ms-input-placeholder {
   font-size: 1.5rem;
+  transform: translateX(2rem);
 }
 
 .heading .logo .searchbar .search input::placeholder {
   font-size: 1.5rem;
+  -webkit-transform: translateX(2rem);
+          transform: translateX(2rem);
 }
 
 .heading .logo .searchbar .search button {
@@ -336,20 +342,17 @@ html {
 }
 
 .heading .logo .searchbar .search .fa {
-  font-size: 3rem;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  font-size: 2rem;
   color: #555;
-  border-bottom: 1px solid #222;
+  -webkit-transform: translate(2rem, -0.2rem);
+          transform: translate(2rem, -0.2rem);
   padding-bottom: 0.9rem;
   padding-top: 1rem;
 }
 
 @media only screen and (max-width: 900px) {
   .heading .logo .searchbar .search .fa {
-    -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -367,8 +370,8 @@ html {
   position: absolute;
   padding-top: 1rem;
   display: none;
-  -webkit-transform: translate(2.82rem, 6rem);
-          transform: translate(2.82rem, 6rem);
+  -webkit-transform: translate(1.85rem, 6rem);
+          transform: translate(1.85rem, 6rem);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;

@@ -18,7 +18,7 @@ html{
 }
 
 body{
-    background-color: #fafafa;
+    background-color: #f9f9f9;
 }
 
 .section-1{
@@ -169,6 +169,7 @@ body{
                     }
                     &::placeholder{
                         font-size: 1.5rem;
+                        transform: translateX(2rem);
                     }
                 }
                 button{
@@ -204,15 +205,13 @@ body{
                     }
                 }
                 .fa{
-                    font-size: 3rem;
-                    transform: translate(0 , 0);
+                    font-size: 2rem;
                     color: #555;
-                    border-bottom: 1px solid #222;
+                    transform: translate(2rem, -0.2rem);
                     padding-bottom: 0.9rem;
                     padding-top:1rem;
                     @include break(b3){
-                        transform: translateY(-2px);
-                        font-size:2.5rem;
+                        font-size:2rem;
                     }
                 }
             }
@@ -227,7 +226,7 @@ body{
                 position: absolute;
                 padding-top:1rem;
                 display: none;
-                transform: translate(2.82rem,6rem);
+                transform: translate(1.85rem,6rem);
                 align-items: flex-start;
                 flex-wrap: wrap;
                 border-bottom-left-radius: 1.5rem;
@@ -440,7 +439,7 @@ input[type=search]{
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    background-color: #fafafa;
+    background-color: #f9f9f9;
     @include break(b2){
         margin-top:-9rem;
     }
@@ -450,7 +449,7 @@ input[type=search]{
     width:40%;
     height:100%;
     margin:0.5rem;
-    border:1px solid #ccc;
+    border:0.5px solid #ccc;
     font-weight: 600;
     background-color: #fff;
     font-family: "Open-sans",sans-serif;
@@ -520,7 +519,7 @@ input[type=search]{
             margin:0.5rem;
             height:32%;
             display: flex;
-            border:1px solid #ccc;
+            border:0.5px solid #ccc;
             transition: all 0.2s;
             background-color: #fff;
             // min-height: max-content;
@@ -620,7 +619,7 @@ input[type=search]{
                 margin:0.5rem;
                 height:32%;
                 display: flex;
-                border:1px solid #ccc;
+                border:0.5px solid #ccc;
                 transition: all 0.2s;
                 background-color: #fff;
                 font-family: "Lato",sans-serif;
@@ -716,7 +715,7 @@ input[type=search]{
         height:10%;
         color:#3988C8;
         background-color:#fff;
-        border:1px solid #ccc;
+        border:0.5px solid #ccc;
         @include break(b3){
             font-size:2rem;
         }
@@ -743,7 +742,7 @@ input[type=search]{
 
 .section-3{
     height: max-content;
-    background-color: #fafafa;
+    background-color: #f9f9f9;
     margin-top:-5rem;
     padding-top:5rem;
     padding-bottom: 10rem;
@@ -795,18 +794,12 @@ input[type=search]{
             transform: translateY(-2.5rem);
         }
         &:hover{
-            background-color: #fafafa;
+            background-color: #f9f9f9;
             color:#3988C8;
             border:3px solid #3988C8;
         }
         &:hover .seemore{
             color:#3988C8;
-        }
-        &:active{
-            transform: translate(1px,1px);
-            @include break(b5){
-                transform: translateY(-195%);
-            }
         }
         .seemore{
             text-decoration: none;
@@ -864,7 +857,7 @@ input[type=search]{
             flex-direction: column;
             justify-content: space-around;
             height:100%;
-            border:1px solid #ccc;
+            border:0.5px solid #ccc;
             @include break(b4){
                 width:100%;
                 height:65%;
@@ -1337,11 +1330,11 @@ footer{
     margin-bottom:2rem;
     font-weight: 400;
     @include break(b5){
-        margin-top:-10rem;
+        margin-top:-4rem;
         font-size:4rem;
     }
     @include break(b7){
-        margin-top:-25rem;
+        // margin-top:-25rem;
         font-size:3rem;
     }
     &-sub{

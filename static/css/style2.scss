@@ -164,6 +164,7 @@ html{
                     }
                     &::placeholder{
                         font-size: 1.5rem;
+                        transform: translateX(2rem);
                     }
                 }
                 button{
@@ -199,15 +200,13 @@ html{
                     }
                 }
                 .fa{
-                    font-size: 3rem;
-                    transform: translate(0 , 0);
+                    font-size: 2rem;
                     color: #555;
-                    border-bottom: 1px solid #222;
+                    transform: translate(2rem, -0.2rem);
                     padding-bottom: 0.9rem;
                     padding-top:1rem;
                     @include break(b3){
-                        transform: translateY(-2px);
-                        font-size:2.5rem;
+                        font-size:2rem;
                     }
                 }
             }
@@ -222,7 +221,7 @@ html{
                 position: absolute;
                 padding-top:1rem;
                 display: none;
-                transform: translate(2.82rem,6rem);
+                transform: translate(1.85rem,6rem);
                 align-items: flex-start;
                 flex-wrap: wrap;
                 border-bottom-left-radius: 1.5rem;
