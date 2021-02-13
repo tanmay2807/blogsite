@@ -258,7 +258,7 @@ app.get("/",function(req,res){
 });
 
 app.get("/electronics", (req,res)=>{
-    res.render("electronics");
+    res.render("Electronics");
 })
 
 app.get("/softwares",function(req,res){
