@@ -188,8 +188,8 @@ app.post("/contact",function(req,res){
             type: 'OAuth2',
             user: 'tanmay.vasu01@gmail.com',
             refreshToken: '1//04OdOGYeHfYF1CgYIARAAGAQSNwF-L9Ir8liBsKs1k64kN3wKfwlP0iZxXgy5kENZX5i4-D9FncCkSdlzI7mOfXtwPgiXOtePIpM',
-            clientId: '216457237722-ucu49pa5mhkce1nn59rdr148igt8ifiq.apps.googleusercontent.com',
-            clientSecret: 'vl5dunv7novRjZyiv2PdyhpN',
+            clientId: process.env.EMAIL_CLIENT_ID,
+            clientSecret: process.env.EMAIL_CLIENT_SECRET,
             expires:1606317897238 + 60000,
             accessToken: 'ya29.a0AfH6SMAULmHUSSB1Mf-78wPWm381en1C1Q_HkKV6y00W888p4Y1HojNSOyTXFTwbhRnQ2Va3NyufmT5CC0dbECsexUjaT_3y-OuZPi91oAhSPA_0zgOnw5G6pUgpGfrzWFr6GWXoOYnzv5Q3WecyE9MQmBTuR43F7yKgbl0TSxs'
         }
@@ -235,7 +235,7 @@ function mailchimp(req,res){
     const url = "https://us17.api.mailchimp.com/3.0/lists/b9650a6320"
     const options = {
         method: "POST",
-        auth: "TanmayAF:869b1c81046fef372fcdc4657c3a47c9-us17"
+        auth: process.env.LIST_API
     }
     const request = https.request(url, options, function (response){
         response.on("data",function(data){
@@ -301,10 +301,6 @@ app.post("/",function(req,res){
     mailchimp(req,res);
 });
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || 3000 , ()=>{
     console.log("Server is running on port 3000");
 });
-
-
-// api key: 869b1c81046fef372fcdc4657c3a47c9-us17
-// list id:b9650a6320
