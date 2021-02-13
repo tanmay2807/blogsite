@@ -77,7 +77,9 @@ app.get("/electronics/:slug", async (req , res)=>{
 
 app.post("/electronics", async (req, res)=>{
     let bloginfo = new blogInfo ({
-        title: req.body.title,
+        title: req.body.route,
+        description: req.body.description,
+        blogtitle: req.body.title,
         markdown: req.body.markdown
     })
     try {
@@ -99,7 +101,9 @@ app.get("/large-appliances/:slug", async (req , res)=>{
 
 app.post("/large-appliances", async (req, res)=>{
     let bloginfo = new blogInfo ({
-        title: req.body.title,
+        title: req.body.route,
+        description: req.body.description,
+        blogtitle: req.body.title,
         markdown: req.body.markdown
     })
     try {
@@ -120,7 +124,9 @@ app.get("/softwares/:slug", async (req , res)=>{
 
 app.post("/softwares", async (req, res)=>{
     let bloginfo = new blogInfo ({
-        title: req.body.title,
+        title: req.body.route,
+        description: req.body.description,
+        blogtitle: req.body.title,
         markdown: req.body.markdown
     })
     try {
@@ -141,7 +147,9 @@ app.get("/gadgets/:slug", async (req , res)=>{
 
 app.post("/gadgets", async (req, res)=>{
     let bloginfo = new blogInfo ({
-        title: req.body.title,
+        title: req.body.route,
+        description: req.body.description,
+        blogtitle: req.body.title,
         markdown: req.body.markdown
     })
     try {
@@ -162,7 +170,9 @@ app.get("/health/:slug", async (req , res)=>{
 
 app.post("/health", async (req, res)=>{
     let bloginfo = new blogInfo ({
-        title: req.body.title,
+        title: req.body.route,
+        description: req.body.description,
+        blogtitle: req.body.title,
         markdown: req.body.markdown
     })
     try {

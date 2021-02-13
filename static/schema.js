@@ -4,6 +4,8 @@ const slugify = require('slugify')
 const blogSchema = new mongoose.Schema({
 
     title: String,
+    description: String,
+    blogtitle: String,
     markdown: String,
     slug: {
         type: String,
