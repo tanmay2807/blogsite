@@ -263,6 +263,10 @@ function mailchimp(req,res){
     }
 }
 
+app.get("/3207272.html" ,(req,res)=>{
+    res.sendFile(__dirname + "/3207272.html");
+});
+
 app.get("/",function(req,res){
     res.sendFile(__dirname + "/index.html");
 });
