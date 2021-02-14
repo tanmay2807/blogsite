@@ -1951,7 +1951,7 @@ footer .footer-container input[type=email] {
   }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 500px) {
   .topic {
     font-size: 3rem;
   }
