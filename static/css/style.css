@@ -1953,13 +1953,13 @@ footer .footer-container input[type=email] {
 
 @media only screen and (max-width: 390px) {
   .topic {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 }
 
 @media only screen and (max-width: 370px) {
   .topic {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 

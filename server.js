@@ -195,19 +195,14 @@ app.post("/contact",function(req,res){
         pool: true,
         service: 'Gmail',
         auth: {
-            type: 'OAuth2',
-            user: 'tanmay.vasu01@gmail.com',
-            refreshToken: '1//04OdOGYeHfYF1CgYIARAAGAQSNwF-L9Ir8liBsKs1k64kN3wKfwlP0iZxXgy5kENZX5i4-D9FncCkSdlzI7mOfXtwPgiXOtePIpM',
-            clientId: process.env.EMAIL_CLIENT_ID,
-            clientSecret: process.env.EMAIL_CLIENT_SECRET,
-            expires:1606317897238 + 60000,
-            accessToken: 'ya29.a0AfH6SMAULmHUSSB1Mf-78wPWm381en1C1Q_HkKV6y00W888p4Y1HojNSOyTXFTwbhRnQ2Va3NyufmT5CC0dbECsexUjaT_3y-OuZPi91oAhSPA_0zgOnw5G6pUgpGfrzWFr6GWXoOYnzv5Q3WecyE9MQmBTuR43F7yKgbl0TSxs'
+            user: 'technhealth2021@gmail.com',
+            pass: process.env.EMAIL_PASS
         }
     });
 
     var mailOptions = {
-        from: 'tanmay.vasu01@gmail.com',
-        to: 'tanmay.vasu01@gmail.com',
+        from: 'technhealth2021@gmail.com',
+        to: 'technhealth2021@gmail.com',
         subject: 'New Message!' +  " " + Name + " " + Email,
         html: Message
     };
@@ -262,10 +257,6 @@ function mailchimp(req,res){
         res.send("There was an error with signing up, please try again");
     }
 }
-
-app.get("/3207272.html" ,(req,res)=>{
-    res.sendFile(__dirname + "/3207272.html");
-});
 
 app.get("/",function(req,res){
     res.sendFile(__dirname + "/index.html");

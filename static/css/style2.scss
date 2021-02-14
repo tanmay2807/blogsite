@@ -689,6 +689,29 @@ input[type=search]{
                 }
                 .des-2-2{
 
+                    button{
+                        height:4rem;
+                        text-decoration: none;
+                        width:max-content;
+                        padding:0.7rem 1.5rem;
+                        font-weight: 700;
+                        background-color: #3988C8;
+                        color:#fff;
+                        border:2px solid #3988C8;
+                        cursor: pointer;
+                        @include break(b5){
+                            height:3.5rem;
+                        }
+                        @include break(b6){
+                            padding:0.5rem 0.5rem;
+                            margin:0.2rem;
+                        }
+                        &:hover{
+                            background-color: #fff;
+                            color:#3988C8;
+                        }
+                    }
+
                     .button{
                         height:4rem;
                         text-decoration: none;
