@@ -1,0 +1,5 @@
+User-Agent: *
+
+Disallow: /imadmin
+
+Sitemap: https://www.thetechnhealth.com/sitemap.xml

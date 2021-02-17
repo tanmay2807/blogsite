@@ -258,9 +258,13 @@ function mailchimp(req,res){
     }
 }
 
+app.get("/robots.txt", (req,res)=>{
+    res.sendFile(__dirname + "/robots.txt");
+});
+
 app.get("/sitemap.xml", (req,res)=>{
     res.sendFile(__dirname + "/sitemap.xml");
-})
+});
 
 app.get("/",function(req,res){
     res.sendFile(__dirname + "/index.html");
