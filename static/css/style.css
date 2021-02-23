@@ -742,9 +742,10 @@ input[type=search] {
   height: 20%;
   display: block;
   padding: 1rem;
-  font-size: 3.4rem;
+  font-size: 2.9rem;
   text-decoration: none;
-  color: #111;
+  color: #222;
+  font-family: 'Lato', sans-serif;
   cursor: pointer;
 }
 
@@ -788,7 +789,7 @@ input[type=search] {
   font-weight: 300;
   padding: 1rem;
   height: 10%;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -872,7 +873,7 @@ input[type=search] {
 }
 
 .popular-blogs .blogs .blog-topic-1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-decoration: none;
   cursor: pointer;
   -ms-flex-item-align: start;
@@ -1085,7 +1086,7 @@ input[type=search] {
 }
 
 .popular-second .blogs .blog-topic-1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   cursor: pointer;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -1324,7 +1325,7 @@ input[type=search] {
 }
 
 .blog .blog-container {
-  width: 90%;
+  width: 80%;
   height: 65%;
   font-family: "Lato",sans-serif;
   margin: 1rem;
